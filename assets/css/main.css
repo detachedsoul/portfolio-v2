@@ -1,0 +1,112 @@
+:root {
+    --black: #343a40;
+    --primary-bg: #fff;
+    --secondary-bg: #f7f7f8;
+    --baloo-2: 'Baloo 2';
+    --nunito: 'Nunito';
+    --luckiest-guy: 'Luckiest Guy';
+    --blue: #06f;
+    --pacifico: 'Pacifico';
+}
+
+::-moz-selection {
+    background-color: #ff303c;
+    color: var(--primary-bg);
+}
+
+::selection {
+    background-color: #ff303c;
+    color: var(--primary-bg);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    -ms-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+}
+
+body {
+    color: var(--black);
+    font-family: var(--baloo-2);
+    font-size: 130%;
+    font-weight: 100;
+    box-shadow: 5px 6px 20px 0 rgb(0 0 0 / 10%);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    border: none;
+    outline: none;
+    font-family: var(--baloo-2);
+    font-size: 100%;
+    font-weight: 300;
+}
+
+button {
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    word-break: break-word;
+    margin: 0;
+}
+
+header {
+    padding: .7rem;
+    max-width: 100%;
+    top: 0;
+}
+
+label {
+    display: block;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0e2431;
+    color: var(--primary-bg);
+    /* margin-top: 2rem; */
+    padding: 5rem 1rem;
+}
+
+footer .link {
+    color: #ff303c;
+}

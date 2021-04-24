@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wisdom Ojimah, wisdom ojimah's portfolio, folio"
+    />
+    <meta name="author" content="Wisdom Ojimah" />
+    <title>Wisdom Ojimah | Web Developer</title>
+
+    <!-- Prelod stylesheets and other resources -->
+    <link rel="preload" href="assets/css/main.css" as="style" />
+    <link rel="preload" href="assets/css/style.css" as="style" />
+    <link rel="preload" href="assets/icons/uicons.css" as="style" />
+    <link rel="preload" href="assets/js/main.js" as="script" />
+
+    <!-- Actual stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="relative">
+
+    <header class="flex shadow flex-column relative bg-white sticky">
+        <div class="flex align-center nav-controls space-between">
+            <div class="trademark header">
+                <span class="initial round">W</span>isdom Ojimah
+            </div>
+            <a class="nav-toggle-btn" href="javascript:void(0)">
+                <span class="nav-toggle relative"></span>
+            </a>
+        </div>
+
+        <div class="nav-content absolute bg-secondary">
+            <nav>
+                <ul class="flex flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            <i class="fr fi-rr-home relative"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <i class="fr fi-rr-info relative"></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">
+                            <i class="fr fi-rr-file-psd relative"></i>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fr fi-rr-inbox relative"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Home -->
+        <section class="container home" id="home">
+
+            <div class="home-img">
+                <img src="assets/img/me.png" alt="Wisdom Ojimah" width="100%" height=auto>
+            </div>
+
+            <div class="intro container-content">
+                <h3 class="header">
+                    Hi, I am 
+                </h3>
+                <h2 class="header">
+                    <span class="blue">
+                        Wisdom Ojimah
+                    </span>
+                </h2>
+                <h3 class="header">
+                    Web Developer
+                </h3>
+                <a class="btn contact-btn shadow" href="#contact">
+                    Contact 
+                    <i class="fr fi-rr-envelope relative"></i>
+                </a>
+            </div>
+            
+        </section>
+
+        <!-- About -->
+        <section class="container" id="about">
+            <h2 class="container-heading text-center relative">
+                About
+            </h2>
+            
+            <div class="about flex flex-column center">
+
+                <img class="about-img shadow bg-white" src="assets/img/project.png" alt="Wisdom Ojimah" width="95%" height="auto">
+
+                <div class="about-text container-content">
+                    <div class="text-center header">
+                        <p>
+                            I am Wisdom Ojimah
+                        </p>
+                        <strong class="header">
+                            I'm a Web Developer based in Rivers State, Nigeria.
+                        </strong>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco lab oris nisi ut aliquip ex ea commodo cons equat. Duis aute irure dolor in reprehenderit in voluptate vel.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Portfolio -->
+        <section class="container" id="portfolio">
+            <h2 class="container-heading text-center relative">
+                Portfolio
+            </h2>
+            
+            <div class="grid">
+
+                <div class="portfolio shadow">
+
+                    <div class="portfolio-img bg-white relative">
+                        <img src="assets/img/project.png" alt="Inkedsolace" width="100%">
+                        <div class="portfolio-overlay absolute flex center">
+                            <h3 class="header">
+                                <a href="https://inkedsolace.000webhostapp.com" target="_blank">
+                                    Visit Site
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-desc">
+                        <h3 class="text-center header">
+                            <a class="blue link" href="https://inkedsolace.000webhostapp.com">Inkedsolace</a>
+                        </h3>
+                        <p>
+                            Inkedsolace was born out of the desire to bring poetry
+                            to those who love and value it.
+                        </p>
+                        <p>
+                            Check it out for some nice poems. You can also check the static version <a class="blue link" href="https://detachedsoul.github.io/inkedsolace-v1">here.</a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="portfolio shadow">
+
+                    <div class="portfolio-img bg-white relative">
+                        <img src="assets/img/project.png" alt="Inkedsolace" width="100%" height="100%">
+                        <div class="portfolio-overlay absolute flex center">
+                            <h3 class="header">
+                                <a href="https://detachedsoul.github.io/agric-ecommerce" target="_blank">
+                                    Visit Site
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-desc">
+                        <h3 class="text-center header">
+                            <a class="blue link" href="https://detachedsoul.github.io/agric-ecommerce">Agricultural e-Commerce</a>
+                        </h3>
+                        <p>
+                            A sleek and simple agricultural products e-commerce
+                            website (still under construction).
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="portfolio shadow">
+
+                    <div class="portfolio-img bg-white relative">
+                        <img src="assets/img/project.png" alt="Inkedsolace" width="100%" height="100%">
+                        <div class="portfolio-overlay absolute flex center">
+                            <h3 class="header">
+                                <a href="https://vanesta.000webhostapp.com" target="_blank">
+                                    Visit Site
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-desc">
+                        <h3 class="text-center header">
+                            <a class="blue link" href="https://vanesta.000webhostapp.com">Education Website Landing Page</a>
+                        </h3>
+                        <p>
+                            A landing page for an education management system.
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="portfolio shadow">
+
+                    <div class="portfolio-img bg-white relative">
+                        <img src="assets/img/project.png" alt="Inkedsolace" width="100%" height="100%">
+                        <div class="portfolio-overlay absolute flex center">
+                            <h3 class="header">
+                                <a href="https://detachedsoul.github.io/writer-web-template" target="_blank">
+                                    Visit Site
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-desc">
+                        <h3 class="text-center header">
+                            <a class="blue link" href="https://detachedsoul.github.io/writer-web-template">Writer's blog</a>
+                        </h3>
+                        <p>
+                            A simple blog for writers, authors, and blogging in general.
+                        </p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section class="container" id="contact">
+            <h2 class="container-heading text-center relative">
+                Contact
+            </h2>
+            <p class="text-center">
+                Impressed and would like to work with me,
+                or have questions or observations? I'll love to hear from you.
+            </p>
+
+            <div class="container-content">
+
+                <form method="post">
+
+                    <div class="form-group">
+                        <label for="name">
+                            Name
+                        </label>
+                        <input class="form-input bg-white shadow" type="text" name="name" value="" placeholder="Name" id="name" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email
+                        </label>
+                        <input class="form-input bg-white shadow" type="email" name="email" value="" placeholder="Email address" id="email" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">
+                            Subject
+                        </label>
+                        <input class="form-input bg-white shadow" type="text" name="subject" value="" placeholder="Subject" id="subject" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            Message
+                        </label>
+                        <textarea class="form-input bg-white shadow" name="message" id="message" rows="5" placeholder="Message"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn form-input shadow">
+                            Send Message
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="flex flex-column text-center">
+        <p>
+            Created with all the <i class="fr fi-rr-heart relative"></i>
+            in the world by <a class="link" href="https://web.facebook.com/IamWisdomOjimah">Wisdom Ojimah</a>
+        </p>
+        <p>
+            <i class="fr fi-rr-copyright relative"></i> 2021. All rights reserved.
+        </p>
+    </footer>
+
+    
+    <a class="to-top fixed" href="javascript:void(0)">
+        <i class="fr fi-rr-angle-up"></i>
+    </a>
+
+    <!-- Stylesheets and scripts -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/icons/uicons.css" />
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
