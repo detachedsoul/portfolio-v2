@@ -1,7 +1,8 @@
 :root {
     --black: #343a40;
     --primary-bg: #fff;
-    --secondary-bg: #f7f7f8;
+    /* --secondary-bg: #f7f7f8; */
+    --secondary-bg: #f0f6f6;
     --baloo-2: 'Baloo 2';
     --nunito: 'Nunito';
     --luckiest-guy: 'Luckiest Guy';
@@ -103,7 +104,6 @@ label {
 footer {
     background-color: #0e2431;
     color: var(--primary-bg);
-    /* margin-top: 2rem; */
     padding: 5rem 1rem;
 }
 
