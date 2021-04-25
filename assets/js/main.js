@@ -29,3 +29,11 @@ toTop.addEventListener('click', () => {
         })
     }, 600)
 });
+
+window.onscroll = () => {
+    if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
+        toTop.classList.add('to-top-show');
+    } else {
+        toTop.classList.remove('to-top-show');
+    }
+}

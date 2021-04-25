@@ -280,16 +280,20 @@ footer p:last-child {
 }
 
 .portfolio-overlay {
-    opacity: 0;
-    bottom: 0;
-    height: 0;
-    /* background-color: rgb(255, 48, 60, .9); */
-    background-color: rgb(14, 36, 49, .9);
+    bottom: 0%;
+    height: 100%;
+    /*background-color: rgb(255, 48, 60, .9);
+    */background-color: rgb(14, 36, 49, .9);
     transition: all linear .5s;
     -webkit-transition: all linear .5s;
     -moz-transition: all linear .5s;
     -ms-transition: all linear .5s;
     -o-transition: all linear .5s;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
 }
 
 .portfolio-img:hover .portfolio-overlay {
@@ -303,48 +307,59 @@ footer p:last-child {
 }
 
 @-webkit-keyframes close {
-    from {
-        height: 100%;
-        opacity: 1;
+    0% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
     }
 
-    to {
-        height: 0;
-        opacity: 0;
+    100% {
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
     }
 }
 
 @keyframes close {
-    from {
-        height: 100%;
-        opacity: 0;
+    0% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
     }
 
-    to {
-        height: 0;
-        opacity: 0;
+    100% {
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
     }
 }
 
-@-webkit-keyframes cover {
-    from {
-        height: 0;
-    }
 
-    to {
-        height: 100%;
-        opacity: 1;
+@-webkit-keyframes cover {
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);    
     }
 }
 
 @keyframes cover {
-    from {
-        height: 0;
-    }
-
-    to {
-        height: 100%;
-        opacity: 1;
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);    
     }
 }
 
@@ -356,6 +371,10 @@ footer p:last-child {
 
 .portfolio-img:hover .portfolio-overlay a {
    opacity: 1;
+}
+
+.portfolio-img {
+    overflow: hidden;
 }
 
 .form-input {
@@ -378,9 +397,13 @@ footer p:last-child {
 }
 
 .to-top {
-    background-color: rgb(255, 48, 60, .5);
+    background-color: rgb(255, 48, 60, .8);
     color: var(--primary-bg);
-    right: 1rem;
+    right: -100%;
     bottom: 2rem;
     padding: .7rem .7rem .5rem .7rem;
+}
+
+.to-top-show {
+    right: 1rem;
 }
