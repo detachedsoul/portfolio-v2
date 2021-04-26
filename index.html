@@ -23,8 +23,9 @@
 
     <!-- Actual stylesheets -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body class="relative bg-seconday">
+  <body class="relative">
 
     <header class="flex flex-column sticky shadow relative bg-white">
 
@@ -73,10 +74,10 @@
     <main>
 
         <!-- Home -->
-        <section class="container home" id="home">
+        <section class="container grid home align-center" id="home">
 
             <div class="home-img">
-                <img src="assets/img/me.png" alt="Wisdom Ojimah" width=100% height=auto>
+                <img src="assets/img/me.png" alt="Wisdom Ojimah" width=100% height=100%>
             </div>
 
             <div class="intro container-content">
@@ -110,7 +111,7 @@
 
                 <img class="about-img shadow" src="assets/img/project.png" alt="Wisdom Ojimah" width=100% height=auto>
 
-                <div class="about-text">
+                <div class="about-text container-content">
                     <div class="text-center header">
                         <p>
                             I am Wisdom Ojimah
@@ -139,7 +140,7 @@
                 Portfolio
             </h2>
             
-            <div class="grid">
+            <div class="portfolio-grid grid">
 
                 <div class="portfolio shadow relative">
 
@@ -191,7 +192,7 @@
                             website (still under construction).
                         </p>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In vitae quod velit. Expedita rerum unde ducimus? Voluptatum enim, maiores rerum neque officiis doloremque incidunt cumque dolor. Expedita architecto voluptate eligendi.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In vitae quod velit. Expedita rerum unde ducimus? Voluptatum enim.
                         </p>
                     </div>
 
@@ -218,7 +219,7 @@
                             A landing page for an education management system.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint reiciendis itaque dignissimos tempore non laborum, voluptates voluptatum amet saepe excepturi hic nobis, iusto accusamus eum! Natus nam id saepe odio!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In vitae quod velit. Expedita rerum unde ducimus? Voluptatum enim.
                         </p>
                     </div>
                     
@@ -245,7 +246,7 @@
                             A simple blog for writers, authors, and blogging in general.
                         </p>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est cupiditate sed quod enim rem vero molestiae perspiciatis quae quos voluptatibus, doloremque, aliquid neque. Molestiae dolorem beatae dolor nisi quia quod!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In vitae quod velit. Expedita rerum unde ducimus? Voluptatum enim.
                         </p>
                     </div>
                     
@@ -269,37 +270,37 @@
 
             <div class="container-content bg-white contact shadow">
 
-                <form method="post">
+                <form class="contact-grid align-center" method="post">
 
-                    <div class="form-group">
+                    <div class="form-group name">
                         <label for="name">
                             Name
                         </label>
                         <input class="form-input bg-white" type="text" name="name" value="" placeholder="Name" id="name" autocomplete="off">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group email">
                         <label for="email">
                             Email
                         </label>
                         <input class="form-input bg-white" type="email" name="email" value="" placeholder="Email address" id="email" autocomplete="off">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group subject">
                         <label for="subject">
                             Subject
                         </label>
                         <input class="form-input bg-white" type="text" name="subject" value="" placeholder="Subject" id="subject" autocomplete="off">
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group message">
                         <label for="message">
                             Message
                         </label>
                         <textarea class="form-input bg-white" name="message" id="message" rows="5" placeholder="Message"></textarea>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group submit">
                         <button class="btn form-input form-btn" type="submit">
                             Send Message
                         </button>
@@ -330,7 +331,7 @@
     </a>
 
     <!-- Stylesheets and scripts -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/icons/uicons.css" />
     <script src="assets/js/main.js"></script>
