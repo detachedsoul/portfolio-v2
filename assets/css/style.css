@@ -72,7 +72,7 @@
 
 .btn,
 .initial,
-.nav-link,
+.nav-link:not(.active),
 .portfolio-img a,
 .to-top {
     color: var(--primary-bg);
