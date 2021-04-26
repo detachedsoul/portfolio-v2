@@ -27,28 +27,30 @@ toTop.addEventListener('click', () => {
             'top': 0,
             'left': 0,
             'behavior': 'smooth'
-        })
-    }, 600)
+        });
+    }, 600);
 });
 
 window.onscroll = () => {
     if (document.documentElement.scrollTop > 500 || document.body.scrollTop > 500) {
         toTop.classList.add('to-top-show');
-        header.classList.add('sticky');
-        header.classList.add('shadow');
+        // header.classList.add('sticky');
+        // header.classList.add('shadow');
     } else {
         toTop.classList.remove('to-top-show');
-        header.classList.remove('sticky');
-        header.classList.remove('shadow');
+        // header.classList.remove('sticky');
+        // header.classList.remove('shadow');
     }
-}
+};
 
 function scrollToView(element, elemToScroll) {
     let scrollElem = document.querySelector(elemToScroll);
-    let scrollCtrls = document.querySelector(element);
+    let scrollCtrls = document.querySelectorAll(element);
 
-    scrollCtrls.addEventListener('click', () => {
-        scrollElem.scrollIntoView();
+    scrollCtrls.forEach(elem => {
+        elem.addEventListener('click', () => {
+            scrollElem.scrollIntoView();
+        });
     });
 }
 
