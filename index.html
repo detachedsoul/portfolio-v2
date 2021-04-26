@@ -10,7 +10,7 @@
     />
     <meta name="author" content="Wisdom Ojimah" />
     <title>Wisdom Ojimah | Web Developer</title>
-    <link rel="icon" href="assets/img/logo.png">
+    <link rel="icon" href="assets/img/logo.png" />
 
     <!-- Prelod stylesheets and other resources -->
     <link rel="preload" href="assets/css/main.css" as="style" />
@@ -18,14 +18,16 @@
     <link rel="preload" href="assets/css/fonts.css" as="style" />
     <link rel="preload" href="assets/icons/uicons.css" as="style" />
     <link rel="preload" href="assets/js/main.js" as="script" />
+    <link rel="preload" href="assets/js/ckeditor.js" as="script" />
 
 
     <!-- Actual stylesheets -->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body class="relative">
+  <body class="relative bg-seconday">
 
-    <header class="flex flex-column relative bg-white sticky">
+    <header class="flex flex-column relative bg-white">
+
         <div class="flex align-center nav-controls space-between">
             <div class="trademark header">
                 <span class="initial round">W</span>isdom Ojimah
@@ -35,29 +37,29 @@
             </a>
         </div>
 
-        <div class="nav-content absolute bg-secondary">
+        <div class="nav-content absolute">
             <nav>
                 <ul class="flex flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">
+                        <a class="nav-link active  click-to-home" href="javascript:void(0)">
                             <i class="fr fi-rr-home relative"></i>
                             Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">
+                        <a class="nav-link click-to-about" href="javascript:void(0)">
                             <i class="fr fi-rr-info relative"></i>
                             About
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">
+                        <a class="nav-link click-to-portfolio" href="javascript:void(0)">
                             <i class="fr fi-rr-file-psd relative"></i>
                             Portfolio
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">
+                        <a class="nav-link click-to-contact" href="javascript:void(0)">
                             <i class="fr fi-rr-inbox relative"></i>
                             Contact
                         </a>
@@ -65,6 +67,7 @@
                 </ul>
             </nav>
         </div>
+
     </header>
 
     <main>
@@ -73,18 +76,18 @@
         <section class="container home" id="home">
 
             <div class="home-img">
-                <img src="assets/img/me.png" alt="Wisdom Ojimah" width="100%" height=100%>
+                <img src="assets/img/me.png" alt="Wisdom Ojimah" width=100% height=auto>
             </div>
 
             <div class="intro container-content">
                 <h3 class="header">
                     Hi, I am 
                 </h3>
-                <h2 class="header">
+                <h1 class="header">
                     <span class="blue">
                         Wisdom Ojimah
                     </span>
-                </h2>
+                </h1>
                 <h3 class="header">
                     Web Developer
                 </h3>
@@ -98,20 +101,21 @@
 
         <!-- About -->
         <section class="container" id="about">
+
             <h2 class="container-heading text-center relative">
                 About
             </h2>
             
-            <div class="about flex flex-column center">
+            <div class="about grid align-center center">
 
-                <img class="about-img shadow bg-white" src="assets/img/project.png" alt="Wisdom Ojimah" width="95%" height="auto">
+                <img class="about-img shadow" src="assets/img/project.png" alt="Wisdom Ojimah" width=95% height=auto>
 
                 <div class="about-text container-content">
                     <div class="text-center header">
                         <p>
                             I am Wisdom Ojimah
                         </p>
-                        <strong class="header">
+                        <strong class="blue header">
                             I'm a Web Developer based in Rivers State, Nigeria.
                         </strong>
                     </div>
@@ -130,6 +134,7 @@
 
         <!-- Portfolio -->
         <section class="container" id="portfolio">
+
             <h2 class="container-heading text-center relative">
                 Portfolio
             </h2>
@@ -138,8 +143,8 @@
 
                 <div class="portfolio shadow relative">
 
-                    <div class="portfolio-img bg-white relative">
-                        <img src="assets/img/project.png" alt="Inkedsolace" width="100%" height="100%">
+                    <div class="portfolio-img relative">
+                        <img class="bg-secondary" src="assets/img/inkedsolace.png" alt="Inkedsolace" width=100% height=100%>
                         <div class="portfolio-overlay absolute flex center">
                             <h3 class="header">
                                 <a href="https://inkedsolace.000webhostapp.com" target="_blank">
@@ -167,7 +172,7 @@
                 <div class="portfolio shadow relative">
 
                     <div class="portfolio-img bg-white relative">
-                        <img src="assets/img/project.png" alt="Agricultural e-Commerce" width="100%" height="100%">
+                        <img class="bg-secondary" src="assets/img/agric.png" alt="Agricultural e-Commerce" width=100% height=100%>
                         <div class="portfolio-overlay absolute flex center">
                             <h3 class="header">
                                 <a href="https://detachedsoul.github.io/agric-ecommerce" target="_blank">
@@ -185,6 +190,9 @@
                             A sleek and simple agricultural products e-commerce
                             website (still under construction).
                         </p>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In vitae quod velit. Expedita rerum unde ducimus? Voluptatum enim, maiores rerum neque officiis doloremque incidunt cumque dolor. Expedita architecto voluptate eligendi.
+                        </p>
                     </div>
 
                 </div>
@@ -192,7 +200,7 @@
                 <div class="portfolio shadow relative">
 
                     <div class="portfolio-img bg-white relative">
-                        <img src="assets/img/project.png" alt="Vanesta" width="100%" height="100%">
+                        <img class="bg-secondary" src="assets/img/vanesta.png" alt="Vanesta" width=100% height=100%>
                         <div class="portfolio-overlay absolute flex center">
                             <h3 class="header">
                                 <a href="https://vanesta.000webhostapp.com" target="_blank">
@@ -209,6 +217,9 @@
                         <p>
                             A landing page for an education management system.
                         </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint reiciendis itaque dignissimos tempore non laborum, voluptates voluptatum amet saepe excepturi hic nobis, iusto accusamus eum! Natus nam id saepe odio!
+                        </p>
                     </div>
                     
                 </div>
@@ -216,7 +227,7 @@
                 <div class="portfolio shadow relative">
 
                     <div class="portfolio-img bg-white relative">
-                        <img src="assets/img/project.png" alt="Inkedsolace" width="100%" height="100%">
+                        <img class="bg-secondary shadow" src="assets/img/writer.png" alt="Inkedsolace" width=100% height=100%>
                         <div class="portfolio-overlay absolute flex center">
                             <h3 class="header">
                                 <a href="https://detachedsoul.github.io/writer-web-template" target="_blank">
@@ -233,6 +244,9 @@
                         <p>
                             A simple blog for writers, authors, and blogging in general.
                         </p>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est cupiditate sed quod enim rem vero molestiae perspiciatis quae quos voluptatibus, doloremque, aliquid neque. Molestiae dolorem beatae dolor nisi quia quod!
+                        </p>
                     </div>
                     
                 </div>
@@ -244,6 +258,7 @@
 
         <!-- Contact -->
         <section class="container" id="contact">
+            
             <h2 class="container-heading text-center relative">
                 Contact
             </h2>
@@ -285,7 +300,7 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn form-input">
+                        <button class="btn form-input form-btn" type="submit">
                             Send Message
                         </button>
                     </div>
@@ -319,5 +334,19 @@
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/icons/uicons.css" />
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#message' ), {
+                //toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+            } )
+            .then( editor => {
+                window.editor = editor;
+            } )
+            .catch( err => {
+                console.error( err.stack );
+            } );
+    </script>
+
   </body>
 </html>
