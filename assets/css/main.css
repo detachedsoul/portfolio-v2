@@ -10,12 +10,15 @@
 }
 
 ::-moz-selection {
-	background-color: #8a0007;
+    background-color: #ff303c;
 	color: var(--primary-bg);
 }
 
-::selection {
-	background-color: #8a0007;
+::selection,
+.btn,
+.container-heading::after,
+.initial {
+    background-color: #ff303c;
 	color: var(--primary-bg);
 }
 
@@ -89,9 +92,18 @@ h6 {
 
 header {
     padding: 0.7rem;
+    top: 0;
+}
+
+header,
+.portfolio,
+.portfolio-img,
+.portfolio img,
+.portfolio-overlay,
+.form-input,
+.contact {
     max-width: 100%;
 	width: 100%;
-    top: 0;
 }
 
 label,
@@ -114,7 +126,9 @@ footer {
 	padding: 5rem 1rem;
 }
 
-footer .link {
+footer .link,
+.nav-link:hover,
+.active {
 	color: #ff303c;
 }
 

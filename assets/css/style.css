@@ -71,12 +71,6 @@
 }
 
 .btn,
-.container-heading::after,
-.initial {
-    background-color: #ff303c;
-}
-
-.btn,
 .initial,
 .nav-link,
 .portfolio-img a,
@@ -240,11 +234,6 @@ footer p:last-child,
     padding-right: 2rem;
 }
 
-.nav-link:hover,
-.active {
-    color: #ff303c;
-}
-
 .container-content {
     padding-right: 1rem;
 }
@@ -264,13 +253,16 @@ footer p:last-child,
     padding-left: 1rem;
 }
 
+.about-img {
+    width: 95%;
+}
+
 .about-img,
 .portfolio,
 .portfolio-img,
 .portfolio-img img,
 .portfolio-overlay,
 .contact {
-    width: 95%;
     border-radius: 1rem;
         -webkit-border-radius: 1rem;
         -moz-border-radius: 1rem;
@@ -280,15 +272,6 @@ footer p:last-child,
 
 .portfolio {
     padding: 1rem .5rem;
-}
-
-.portfolio,
-.portfolio-img,
-.portfolio img,
-.portfolio-overlay,
-.form-input,
-.contact {
-    width: 100%;
 }
 
 .portfolio-overlay {
