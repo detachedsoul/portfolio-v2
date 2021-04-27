@@ -39,14 +39,8 @@
     }
 
     .home,
-    .portfolio-grid,
-    .about {
+    .portfolio-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-    }
-
-    .about {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 2rem;
     }
     
@@ -169,22 +163,17 @@
 }
 
 @media screen and (min-width: 900px) {
+    .about {
+        grid-template-columns: repeat(2, 6fr);
+        gap: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     .contact-grid {
         width: 80%;
     }
 }
-
-/* @media screen and (min-width: 912px) {
-    .about {
-        width: 100%;
-        padding: 0;
-        gap: .5rem;
-    }
-
-    .about img {
-        width: 100%;
-    }
-} */
 
 @media only screen and (min-width: 1024px) {
     .nav-toggle-btn {
@@ -246,6 +235,17 @@
 
     .home > div:last-child {
         grid-row: 1/2;
+    }
+
+    .about {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about {
+        grid-template-columns: repeat(2, 6fr);
+        gap: 2rem;
     }
 
     .contact-grid {
