@@ -28,6 +28,8 @@ toTop.addEventListener('click', () => {
             'left': 0,
             'behavior': 'smooth'
         });
+        navLinks.forEach(link => link.classList.remove('active'));
+        navLinks[0].classList.add('active');
     }, 600);
 });
 
