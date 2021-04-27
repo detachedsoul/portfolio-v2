@@ -217,7 +217,7 @@
     }
 
     .nav-item:not(:last-child) {
-        margin-right: 1.3rem;
+        margin-right: 1rem;
     }
     
     .home,
